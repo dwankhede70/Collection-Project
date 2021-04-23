@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.collection.ArrayList1"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.lang.Cloneable"/>
+<fullyQualifiedTypeName name="java.util.RandomAccess"/>
+<fullyQualifiedTypeName name="org.springframework.cglib.proxy.CallbackGenerator.Context"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="com.braindatawire.collegemanagement.service.Cjc"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+<fullyQualifiedTypeName name="com.braindatawire.collegemanagement.serviceImpl.karvenagar"/>
+<fullyQualifiedTypeName name="com.braindatawire.collegemanagement.model.Course"/>
+<fullyQualifiedTypeName name="com.braindatawire.collegemanagement.model.Faculty"/>
+<fullyQualifiedTypeName name="com.braindatawire.collegemanagement.model.Batch"/>
+<fullyQualifiedTypeName name="com.braindatawire.collegemanagement.model.Student"/>
+</qualifiedTypeNameHistroy>

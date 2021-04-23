@@ -1,0 +1,5 @@
+package com.braindatawire.collegemanagemenr.model;
+
+public class Faculty {
+
+}

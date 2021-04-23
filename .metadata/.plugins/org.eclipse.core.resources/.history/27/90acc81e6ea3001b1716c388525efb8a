@@ -1,0 +1,34 @@
+package com.braindatawire.collegemanagement.client;
+
+import java.util.*;
+public class Test {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in); 
+
+	System.out.println("-----------------Choice--------------");
+	System.out.println("1.Add course\n"+
+						"2.View Course\n"+
+						"3.add Faculty\n"+
+						"4.View Faculty\n"+
+						"5.Add Batch\n"+
+						"6.View Batch\n"+
+						"7.Add Student\n"+
+						"8.view Student");
+	
+	System.out.println("Enter the Choice ");
+	int ch=sc.nextInt();
+	switch (ch) {
+	case 1:
+		
+		break;
+
+	default:
+		break;
+	}
+	
+	
+	
+	
+	
+}
+}

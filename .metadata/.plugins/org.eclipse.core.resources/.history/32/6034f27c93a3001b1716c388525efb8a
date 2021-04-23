@@ -1,0 +1,210 @@
+package com.braindatawire.collegemanagement.serviceImpl;
+
+import com.braindatawire.collegemanagement.model.Batch;
+import com.braindatawire.collegemanagement.model.Course;
+import com.braindatawire.collegemanagement.model.Faculty;
+import com.braindatawire.collegemanagement.model.Student;
+import com.braindatawire.collegemanagement.service.Cjc;
+import java.util.*;
+public class karvenagar implements Cjc {
+	Course c=new Course();
+
+	
+	List<Course> clist=new ArrayList<>();
+	List<Faculty> flist=new ArrayList<>();
+	List<Batch> blist=new ArrayList<>();
+	List<Student> slist=new ArrayList<>();
+Scanner sc =new Scanner(System.in);
+	
+	@Override
+	public void addCourse() {
+		// TODO Auto-generated method stub
+	
+		System.out.println("-----Course Details------");
+		System.out.println("Enter the Course id");
+		int cid=sc.nextInt();
+		c.setCid(cid);
+		
+		System.out.println("Enter the Course name");
+		String cname=sc.next();
+		c.setCname(cname);
+		
+		clist.add(c);
+		
+	}
+
+	@Override
+	public void viewCourse() {
+		// TODO Auto-generated method stub
+
+		System.out.println("----Course View Details----");
+		
+		
+	Iterator<Course> itr=clist.iterator();
+
+		while(itr.hasNext())
+		{
+			
+			Course c=itr.next();
+			System.out.println(c.getCid());
+			System.out.println(c.getCname());
+					
+			
+			
+
+		}
+		
+	}
+
+	@Override
+	public void addFaculty() {
+		// TODO Auto-generated method stub
+		Faculty f=new Faculty();
+		System.out.println("-----Faculty Details------");
+		System.out.println("Enter the Faculty id");
+		int fid=sc.nextInt();
+		f.setFid(fid);
+		
+		System.out.println("Enter the Faculty name");
+		String fname=sc.next();
+		f.setFname(fname);
+		viewCourse();
+		System.out.println("Enter Course id");
+		int id=sc.nextInt();
+		if(id==c.getCid())
+		{
+			f.setCourse(c);
+		}
+		
+		flist.add(f);
+		
+	}
+
+	@Override
+	public void viewFaculty() {
+		// TODO Auto-generated method stub
+		System.out.println("----Faculty View Details----");
+		Faculty f=new Faculty();
+		
+		Iterator<Faculty> itr1=flist.iterator();
+			while(itr1.hasNext())
+			{
+				Faculty f1=itr1.next();
+			   System.out.println(f1.getFid());
+			   System.out.println(f1.getFname());
+			   System.out.println(f1.getCourse().getCid());
+			   System.out.println(f1.getCourse().getCname());
+				}
+			}
+	
+
+	@Override
+	public void addBatch() {
+		// TODO Auto-generated method stub
+		
+		Batch b=new Batch();
+		System.out.println("-----Batch Details------");
+		System.out.println("Enter the batch id");
+		int bid=sc.nextInt();
+		b.setBid(bid);
+		
+		System.out.println("Enter the batch name");
+		String bname=sc.next();
+		b.setBname(bname);
+		
+		
+	}
+
+		
+	
+
+	@Override
+	public void viewBatch() {
+		// TODO Auto-generated method stub
+		System.out.println("----Batch View Details----");
+		Batch b=new Batch();
+		
+		Iterator<Batch> itr=blist.iterator();
+	//
+//			System.out.println(c.getCid());
+//			System.out.println(c.getCname());
+//			
+			while(itr.hasNext())
+			{
+				Object o=new Object();
+				
+				if(o instanceof Integer)
+				{
+					int x=(int)o;
+					System.out.println(x);
+				}
+				if(o instanceof String)
+				{
+					String x=(String)o;
+			   System.out.println(x);
+				}
+				if(o instanceof Faculty)
+				{
+					Faculty x=(Faculty)o;
+			   System.out.println(x.getFid());
+			   System.out.println(x.getFname());
+				}
+			}
+	}
+
+	@Override
+	public void addStudent() {
+		// TODO Auto-generated method stub
+		Student s=new Student();
+		System.out.println("-----Student Details------");
+		System.out.println("Enter the Student id");
+		int sid=sc.nextInt();
+		s.setSid(sid);
+		
+		System.out.println("Enter the Student name");
+		String sname=sc.next();
+		s.setSname(sname);
+		
+		
+	
+	}
+
+	@Override
+	public void viewStudent() {
+		// TODO Auto-generated method stub
+		System.out.println("----Faculty View Details----");
+		Student s=new Student();
+		
+		Iterator<Student> itr=slist.iterator();
+	//
+//			System.out.println(c.getCid());
+//			System.out.println(c.getCname());
+//			
+			while(itr.hasNext())
+			{
+				Object o=new Object();
+				
+				if(o instanceof Integer)
+				{
+					int x=(int)o;
+					System.out.println(x);
+				}
+				if(o instanceof String)
+				{
+					String x=(String)o;
+			   System.out.println(x);
+				}
+				if(o instanceof Faculty)
+				{
+					Student x=(Student)o;
+			   System.out.println(x.getSid());
+			   System.out.println(x.getSname());
+				}
+			}
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package com.braindatawire.collegemanagement.service;
+
+public interface Cjc {
+
+}
